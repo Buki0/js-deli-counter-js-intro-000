@@ -1,6 +1,6 @@
 function takeANumber(line,name){
   line.push(name);
-  return `Welcome, ${name}. You are number ${line.length} in line.`
+  return `Welcome, ${name}. You are number ${line.length} in line.` //
 }
 function nowServing(line){
   if(!line.length){
@@ -16,10 +16,10 @@ function currentLine(line){
     return "The line is currently empty."
   }
   else{
-    const nameWithNumber=[]; //1. firstperson,2.second....
+    const nameWithNumbers=[];
     for(let i=0;i<line.length;i++){
-      nameWithNumber.push(`${i+1}. ${line[i]}`);
+      nameWithNumbers.push(`${i+1}. ${line[i]}`);//  1. Emri
     }
-    return `The line is currently: ${nameWithNumber.join(', ')}`;
+    return `The line is currently: ${nameWithNumbers.join(', ')}`; /
   }
 }
